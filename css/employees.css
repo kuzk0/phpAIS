@@ -1,0 +1,134 @@
+@import url("/src/fonts.css");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --btn: #5aaac9;
+  --text:#4b7caf;
+}
+
+.conteyner {
+  width: 1100px;
+  padding: 0 20px;
+  margin: 0 auto;
+  font-family: "Roboto", sans-serif;
+  font-size: 21px;
+}
+
+.hidden {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
+  overflow: hidden !important;
+  opacity: 0 !important;
+}
+
+.header {
+  width: 100%;
+  height: 65px;
+  display: flex;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.nav__link {
+  text-decoration: none;
+  color: inherit;
+}
+.nav__link.active {
+  color: var(--text);
+}
+.nav__left-nav, .nav__right-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  list-style-type: none;
+}
+.nav__left-item, .nav__right-item {
+  height: 100%;
+  width: max-content;
+}
+.nav__left-item:hover, .nav__right-item:hover {
+  color: var(--text);
+}
+.nav__right-nav {
+  width: max-content;
+}
+.nav__left-nav {
+  width: 400px;
+}
+
+.employee__wrapper {
+  min-width: 500px;
+  padding: 20px;
+  margin: 20px auto;
+  border: 1px solid lightgrey;
+  border-radius: 6px;
+  width: fit-content;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.employee__exit {
+  width: 100px;
+  cursor: pointer;
+  background: var(--btn);
+  outline: none;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  height: 40px;
+  font-size: 19px;
+}
+.employee__exit:focus, .employee__exit:hover {
+  opacity: 0.6;
+}
+
+.form__employee-title {
+  font-size: 26px;
+  margin-bottom: 30px;
+  color: var(--btn);
+}
+.form__employee-add {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+  margin: 150px auto;
+}
+.form__employee-add--inputs {
+  width: 100%;
+  height: 30px;
+  font-size: 25px;
+  padding: 5px;
+  margin: 10px 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+.form__employee-add--inputs:focus {
+  border: 2px solid var(--btn);
+}
+.form__employee-add--btn {
+  width: 100px;
+  color: white;
+  display: inline-block;
+  height: 40px;
+  background: var(--btn);
+  font-size: 17px;
+  line-height: 40px;
+  border-radius: 6px;
+  margin-left: 210px;
+  border: none;
+  cursor: pointer;
+}
+.form__employee-add--btn:hover {
+  background: #8c94d9;
+}
+
+/*# sourceMappingURL=employees.css.map */

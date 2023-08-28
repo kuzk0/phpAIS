@@ -1,0 +1,11 @@
+.aside{
+    float: right;
+    &__wrapper {
+        min-height: 400px;
+     
+        width: 400px;
+        border: 1px solid lightgrey;
+        border-radius: 6px;
+        position: relative;
+    }
+}
